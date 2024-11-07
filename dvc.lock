@@ -1,0 +1,109 @@
+schema: '2.0'
+stages:
+  data_ingestion:
+    cmd: python src/Cauliflower_Classifier/pipeline/stage_01_data_ingestion.py
+    deps:
+    - path: config/config.yaml
+      hash: md5
+      md5: b2f0513842bef041f6a3d020cf934829
+      size: 569
+    - path: src/Cauliflower_Classifier/pipeline/stage_01_data_ingestion.py
+      hash: md5
+      md5: 0ee15ab5e0ffb21cf28c67b293b35401
+      size: 912
+    outs:
+    - path: artifacts/data_ingestion/dataset
+      hash: md5
+      md5: 558f821af563a98bfe4564aeb8d43cdc.dir
+      size: 1561235205
+      nfiles: 656
+  prepare_base_model:
+    cmd: python src/Cauliflower_Classifier/pipeline/stage_02_prepare_base_model.py
+    deps:
+    - path: src/Cauliflower_Classifier/pipeline/stage_02_prepare_base_model.py
+      hash: md5
+      md5: 32420e2657e83ba824c93145609952ac
+      size: 992
+    params:
+      params.yaml:
+        CLASSES: 4
+        IMAGE_SIZE:
+        - 224
+        - 224
+        - 3
+        INCLUDE_TOP: false
+        LEARNING_RATE: 0.01
+        WEIGHTS: imagenet
+    outs:
+    - path: artifacts/prepare_base_model
+      hash: md5
+      md5: c91439e821de087433f1388f2dfaa633.dir
+      size: 118255264
+      nfiles: 2
+  training:
+    cmd: python src/Cauliflower_Classifier/pipeline/stage_03_model_training.py
+    deps:
+    - path: artifacts/data_ingestion/dataset
+      hash: md5
+      md5: 558f821af563a98bfe4564aeb8d43cdc.dir
+      size: 1561235205
+      nfiles: 656
+    - path: artifacts/prepare_base_model
+      hash: md5
+      md5: c91439e821de087433f1388f2dfaa633.dir
+      size: 118255264
+      nfiles: 2
+    - path: config/config.yaml
+      hash: md5
+      md5: b2f0513842bef041f6a3d020cf934829
+      size: 569
+    - path: src/Cauliflower_Classifier/pipeline/stage_03_model_training.py
+      hash: md5
+      md5: 180819fdf4bf78007e591d3543c2cf53
+      size: 913
+    params:
+      params.yaml:
+        AUGMENTATION: true
+        BATCH_SIZE: 16
+        EPOCHS: 1
+        IMAGE_SIZE:
+        - 224
+        - 224
+        - 3
+    outs:
+    - path: artifacts/training/model.h5
+      hash: md5
+      md5: 6113bd26c8479de55344ad8e23ce914d
+      size: 59738928
+  evaluation:
+    cmd: python src/Cauliflower_Classifier/pipeline/stage_04_model_evaluation_mlflow.py
+    deps:
+    - path: artifacts/data_ingestion/dataset
+      hash: md5
+      md5: 558f821af563a98bfe4564aeb8d43cdc.dir
+      size: 1561235205
+      nfiles: 656
+    - path: artifacts/training/model.h5
+      hash: md5
+      md5: 6113bd26c8479de55344ad8e23ce914d
+      size: 59738928
+    - path: config/config.yaml
+      hash: md5
+      md5: b2f0513842bef041f6a3d020cf934829
+      size: 569
+    - path: src/Cauliflower_Classifier/pipeline/stage_04_model_evaluation_mlflow.py
+      hash: md5
+      md5: 7e809a00392ec62079a33809d32ce56e
+      size: 935
+    params:
+      params.yaml:
+        BATCH_SIZE: 16
+        IMAGE_SIZE:
+        - 224
+        - 224
+        - 3
+    outs:
+    - path: scores.json
+      hash: md5
+      md5: 1c2a48b47fa61c7fc1cfc24b3817878b
+      size: 69

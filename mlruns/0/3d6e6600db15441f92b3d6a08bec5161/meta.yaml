@@ -1,0 +1,15 @@
+artifact_uri: file:///home/akill_sud/Documents/projects/Cauliflower_Disease_Prediction/mlruns/0/3d6e6600db15441f92b3d6a08bec5161/artifacts
+end_time: 1730994941530
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 3d6e6600db15441f92b3d6a08bec5161
+run_name: abrasive-worm-801
+run_uuid: 3d6e6600db15441f92b3d6a08bec5161
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1730994937080
+status: 3
+tags: []
+user_id: akill_sud

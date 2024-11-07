@@ -1,0 +1,15 @@
+artifact_uri: file:///home/akill_sud/Documents/projects/Cauliflower_Disease_Prediction/mlruns/0/3d0cfbbc80f74a37b12d35384c32ce3f/artifacts
+end_time: 1730997352848
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 3d0cfbbc80f74a37b12d35384c32ce3f
+run_name: melodic-shad-304
+run_uuid: 3d0cfbbc80f74a37b12d35384c32ce3f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1730997348245
+status: 3
+tags: []
+user_id: akill_sud
