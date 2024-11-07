@@ -1,0 +1,15 @@
+artifact_uri: file:///home/akill_sud/Documents/projects/Cauliflower_Disease_Prediction/mlruns/0/b7c1a5ace12b4d75bd78691929d16c55/artifacts
+end_time: 1730961175048
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: b7c1a5ace12b4d75bd78691929d16c55
+run_name: redolent-robin-929
+run_uuid: b7c1a5ace12b4d75bd78691929d16c55
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1730961170534
+status: 3
+tags: []
+user_id: akill_sud

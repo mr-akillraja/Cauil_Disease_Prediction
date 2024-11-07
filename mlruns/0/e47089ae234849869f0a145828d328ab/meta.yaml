@@ -1,0 +1,15 @@
+artifact_uri: file:///home/akill_sud/Documents/projects/Cauliflower_Disease_Prediction/mlruns/0/e47089ae234849869f0a145828d328ab/artifacts
+end_time: 1730963009776
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e47089ae234849869f0a145828d328ab
+run_name: clean-panda-219
+run_uuid: e47089ae234849869f0a145828d328ab
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1730963005406
+status: 3
+tags: []
+user_id: akill_sud

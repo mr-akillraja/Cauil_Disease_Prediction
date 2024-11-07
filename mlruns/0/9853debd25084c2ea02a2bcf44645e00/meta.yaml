@@ -1,0 +1,15 @@
+artifact_uri: file:///home/akill_sud/Documents/projects/Cauliflower_Disease_Prediction/mlruns/0/9853debd25084c2ea02a2bcf44645e00/artifacts
+end_time: 1730960265952
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 9853debd25084c2ea02a2bcf44645e00
+run_name: marvelous-fox-438
+run_uuid: 9853debd25084c2ea02a2bcf44645e00
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1730960260603
+status: 3
+tags: []
+user_id: akill_sud

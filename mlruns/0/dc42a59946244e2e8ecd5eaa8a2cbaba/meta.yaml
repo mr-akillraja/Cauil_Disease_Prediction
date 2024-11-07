@@ -1,0 +1,15 @@
+artifact_uri: file:///home/akill_sud/Documents/projects/Cauliflower_Disease_Prediction/mlruns/0/dc42a59946244e2e8ecd5eaa8a2cbaba/artifacts
+end_time: 1730964336866
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: dc42a59946244e2e8ecd5eaa8a2cbaba
+run_name: righteous-mink-866
+run_uuid: dc42a59946244e2e8ecd5eaa8a2cbaba
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1730964332451
+status: 3
+tags: []
+user_id: akill_sud

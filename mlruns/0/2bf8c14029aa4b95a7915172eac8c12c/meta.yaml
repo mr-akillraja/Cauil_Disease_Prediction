@@ -1,0 +1,15 @@
+artifact_uri: file:///home/akill_sud/Documents/projects/Cauliflower_Disease_Prediction/mlruns/0/2bf8c14029aa4b95a7915172eac8c12c/artifacts
+end_time: 1730961893102
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 2bf8c14029aa4b95a7915172eac8c12c
+run_name: classy-moth-585
+run_uuid: 2bf8c14029aa4b95a7915172eac8c12c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1730961887509
+status: 3
+tags: []
+user_id: akill_sud
