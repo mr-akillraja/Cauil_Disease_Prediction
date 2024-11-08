@@ -24,3 +24,6 @@ conda create cnncls python=3.8 -y
 ```bash
 conda activate cnncls
 ```
+
+
+uri : "266735809728.dkr.ecr.ap-south-1.amazonaws.com/cauliflower"

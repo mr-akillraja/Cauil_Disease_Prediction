@@ -24,12 +24,15 @@ def home():
     return render_template('index.html')
 
 
+
 @app.route("/train",methods = ['GET','POST'])
 @cross_origin()
 def trainRoute():
     os.system("python  main.py")
     # os.system("dvc repro")
     return "Training Done Successfully!"
+
+
 
 @app.route("/predict",methods = ['POST'])
 @cross_origin()
@@ -42,3 +45,5 @@ def predictRoute():
 if __name__ == "__main__":
     clApp = ClientApp()
     app.run(host = '0.0.0.0',port=8000)
+
+# completed
