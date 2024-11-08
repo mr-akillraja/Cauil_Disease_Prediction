@@ -1,0 +1,15 @@
+artifact_uri: file:///home/akill_sud/Documents/projects/Cauliflower_Disease_Prediction/mlruns/0/23651723852f461f9d4274f8d6e97267/artifacts
+end_time: 1731006821707
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 23651723852f461f9d4274f8d6e97267
+run_name: useful-fowl-833
+run_uuid: 23651723852f461f9d4274f8d6e97267
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1731006816999
+status: 3
+tags: []
+user_id: akill_sud
